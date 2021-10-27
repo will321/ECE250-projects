@@ -1,0 +1,8 @@
+all: triedriver
+
+
+triedriver: trietest.cpp trie.cpp trie.h Node.h
+	g++ -std=c++11 -o triedriver trietest.cpp trie.cpp 
+
+clean:
+	rm triedriver
